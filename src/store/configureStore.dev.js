@@ -10,18 +10,18 @@ const loggerMiddleware = createLogger();
 const finalCreateStore = compose(
   applyMiddleware(
         thunkMiddleware,
-        loggerMiddleware,
+        loggerMiddleware
   ),
   DevTools.instrument()
 )(createStore);
 
 export default function configureStore(initialState) {
-    const store = finalCreateStore(store, initialState);
+    const globalStore = finalCreateStore(store, initialState);
 
     if (module.hot) {
-      module.hot.accept('../reducers', () =>
-        store.replaceReducer(require('../reducers'))
-      );
+        module.hot.accept('../reducers', () =>
+            globalStore.replaceReducer(require('../reducers'))
+        );
     }
 
     return store;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import App from './containers/App.jsx';
+import App from './App.jsx';
 
 export default class Root extends Component {
     render() {

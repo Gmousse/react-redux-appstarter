@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { callYourAction } from './actions.js';
-import YourComponent from './components/YourComponent.jsx';
+import { callYourAction } from '../actions.js';
+import YourComponent from '../components/YourComponent.jsx';
 
-import './css/main.css';
+import '../css/main.css';
 
 class App extends Component {
 
     render() {
         const { dispatch, yourState } = this.props;
         return (
-            <div id="page">
+            <div>
                 <YourComponent />
             </div>
         );
