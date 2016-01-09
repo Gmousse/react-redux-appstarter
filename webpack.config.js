@@ -9,11 +9,11 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'public'),
         filename: 'bundle.js',
-        publicPath: 'http://localhost:3000/public/',
+        publicPath: '/',
     },
     plugins: [
         new webpack.NoErrorsPlugin(),
-        new ExtractTextPlugin('[name].css'),
+        new ExtractTextPlugin('index.css'),
         new webpack.DefinePlugin({
             'process.env': {
                 'NODE_ENV': JSON.stringify('production'),
