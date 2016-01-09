@@ -4,10 +4,11 @@
   "description": "",
   "main": "./lib",
   "scripts": {
-      "preinstall": "npm i -g babel",
-      "compile": "babel -d lib/ src/",
-      "prepublish": "npm run compile",
-      "dev": "node initDevServer.js"
+    "preinstall": "npm i -g babel",
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile",
+    "dev": "node initDevServer.js",
+    "prod": "webpack"
   },
   "author": "Guillaume Mousnier",
   "license": "MIT",
@@ -23,6 +24,7 @@
     "eslint-config-airbnb": "^2.1.1",
     "eslint-plugin-react": "^3.11.3",
     "express": "^4.13.3",
+    "extract-text-webpack-plugin": "^1.0.1",
     "isomorphic-fetch": "^2.2.0",
     "react-redux": "^4.0.1",
     "react-transform-catch-errors": "^1.0.0",
