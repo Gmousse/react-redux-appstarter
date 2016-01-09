@@ -7,7 +7,5 @@ import configureStore from './store/configureStore.js';
 const store = configureStore();
 
 render(
-    <div>
-        <Root props={store} />
-    </div>,
+    <Root store={store} />,
      document.getElementById('app'));

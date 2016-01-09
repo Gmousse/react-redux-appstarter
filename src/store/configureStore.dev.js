@@ -24,5 +24,5 @@ export default function configureStore(initialState) {
         );
     }
 
-    return store;
+    return globalStore;
 }

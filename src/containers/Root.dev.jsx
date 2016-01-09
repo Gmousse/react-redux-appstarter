@@ -7,10 +7,12 @@ export default class Root extends Component {
     render() {
         const { store } = this.props;
         return (
-          <Provider store={store}>
-              <App />
-              <DevTools />
-          </Provider>
+            <Provider store={store}>
+                <div>
+                    <App/>
+                    <DevTools/>
+                </div>
+            </Provider>
         );
     }
 }

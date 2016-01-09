@@ -6,9 +6,11 @@ export default class Root extends Component {
     render() {
         const { store } = this.props;
         return (
-          <Provider store={store}>
-              <App />
-          </Provider>
+            <Provider store={store}>
+                <div>
+                    <App/>
+                </div>
+            </Provider>
         );
     }
 }
