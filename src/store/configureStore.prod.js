@@ -5,7 +5,7 @@ import store from '../reducers.js';
 
 const finalCreateStore = compose(
   applyMiddleware(
-        thunkMiddleware,
+        thunkMiddleware
   )
 )(createStore);
 
