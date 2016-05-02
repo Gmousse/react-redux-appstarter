@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import App from './App.jsx';
+import { route } from './Router.jsx';
 import DevTools from './DevTools.jsx';
 
 export default class Root extends Component {
@@ -9,7 +9,7 @@ export default class Root extends Component {
         return (
             <Provider store={store}>
                 <div>
-                    <App/>
+                    {route(store)}
                     <DevTools/>
                 </div>
             </Provider>
