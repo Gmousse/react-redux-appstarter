@@ -1,5 +1,5 @@
 # react-redux-appstarter
-#### Current version: 1.0.3
+#### Current version: 1.1.0
 
 A starter pack to develop a react + redux + webpack application.
 
@@ -31,10 +31,41 @@ This repository was inspired by [react-webpack-boilerplate](https://github.com/p
 - Launch the webpack compilation which creates a minify bundle.js and index.css: ```npm run prod```
 - Get the result inside public/
 
+## Use routes from react-router
+
+- Configure your own routes in /src/containers/Router.jsx
+
+## Use tests with tape
+
+- Write your tests in tests/ with the suffix '-tests.js'
+- Launch your tests by running : ```npm test```
+
+## Use storybook
+
+- Launch your stories by using: ```npm run storybook```
+
 ## App structure
 
 ```bash
+.
 ├── initDevServer.js
+├── lib
+│   ├── actions.js
+│   ├── components
+│   │   └── YourComponent.js
+│   ├── containers
+│   │   ├── App.js
+│   │   ├── DevTools.js
+│   │   ├── Root.dev.js
+│   │   ├── Root.js
+│   │   ├── Root.prod.js
+│   │   └── Router.js
+│   ├── index.js
+│   ├── reducers.js
+│   └── store
+│       ├── configureStore.dev.js
+│       ├── configureStore.js
+│       └── configureStore.prod.js
 ├── LICENSE
 ├── package.json
 ├── public
@@ -49,7 +80,8 @@ This repository was inspired by [react-webpack-boilerplate](https://github.com/p
 │   │   ├── DevTools.jsx
 │   │   ├── Root.dev.jsx
 │   │   ├── Root.js
-│   │   └── Root.prod.jsx
+│   │   ├── Root.prod.jsx
+│   │   └── Router.jsx
 │   ├── css
 │   │   └── main.css
 │   ├── index.js
@@ -58,8 +90,13 @@ This repository was inspired by [react-webpack-boilerplate](https://github.com/p
 │       ├── configureStore.dev.js
 │       ├── configureStore.js
 │       └── configureStore.prod.js
+├── tests
+│   └── components
+│       └── YourComponent-test.js
 ├── webpack.config.dev.js
 └── webpack.config.js
+
+12 directories, 35 files
 
 
 ```

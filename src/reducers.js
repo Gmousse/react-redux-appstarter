@@ -1,14 +1,10 @@
 import { combineReducers } from 'redux';
-import React from 'react';
+import { routerReducer } from 'react-router-redux';
 import { ACTION_TYPE } from './actions.js';
-
-// Initial States
 
 const yourInitialState = {
     test: '',
 };
-
-// Stores
 
 export default function yourState(state = yourInitialState, action) {
     switch (action.type) {
@@ -23,6 +19,7 @@ export default function yourState(state = yourInitialState, action) {
 
 const store = combineReducers({
     yourState,
+    routing: routerReducer,
 });
 
 export default store;

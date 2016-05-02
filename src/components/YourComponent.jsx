@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
-import '../css/main.css';
+try {
+    require('../css/main.css');
+} catch (error) {
+    console.log('can\'t import css.');
+}
 
 export default class YourComponent extends Component {
 
