@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 try {
     require('../css/main.css');
@@ -10,9 +10,17 @@ export default class YourComponent extends Component {
 
     render() {
         return (
-            <header>
+            <header style={{color: this.props.color}}>
                 Hello World
             </header>
         );
     }
 }
+
+YourComponent.defaultProps = {
+    color: 'black',
+};
+
+YourComponent.propTypes = {
+    color: PropTypes.string,
+};

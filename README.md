@@ -42,6 +42,7 @@ This repository was inspired by [react-webpack-boilerplate](https://github.com/p
 
 ## Use storybook
 
+- Write your stories in .storybook/stories/ with the suffix '-story.js'
 - Launch your stories by using: ```npm run storybook```
 
 ## App structure
