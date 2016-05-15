@@ -1,5 +1,5 @@
 # react-redux-appstarter
-#### Current version: 1.1.1
+#### Current version: 1.2.0
 
 A starter pack to develop a react + redux + webpack application.
 
@@ -49,6 +49,9 @@ This repository was inspired by [react-webpack-boilerplate](https://github.com/p
 
 ```bash
 .
+├── .babelrc
+├── CHANGELOG.md
+├── .eslintrc
 ├── initDevServer.js
 ├── lib
 │   ├── actions.js
@@ -68,6 +71,7 @@ This repository was inspired by [react-webpack-boilerplate](https://github.com/p
 │       ├── configureStore.js
 │       └── configureStore.prod.js
 ├── LICENSE
+├── npm-debug.log
 ├── package.json
 ├── public
 │   └── index.html
@@ -91,13 +95,18 @@ This repository was inspired by [react-webpack-boilerplate](https://github.com/p
 │       ├── configureStore.dev.js
 │       ├── configureStore.js
 │       └── configureStore.prod.js
+├── .storybook
+│   ├── config.js
+│   ├── stories
+│   │   └── YourComponent-story.js
+│   └── webpack.config.js
 ├── tests
 │   └── components
 │       └── YourComponent-test.js
 ├── webpack.config.dev.js
 └── webpack.config.js
 
-12 directories, 35 files
+14 directories, 42 files
 
 
 ```
