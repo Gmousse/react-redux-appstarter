@@ -2,11 +2,11 @@ import React from 'react';
 import { Router, IndexRoute, Route, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 
-import App from './App';
+import App from './App.jsx';
 import YourComponent from '../components/YourComponent.jsx';
 
-export function route(store) {
-    const history = syncHistoryWithStore(browserHistory, store);
+export default function Routes(props) {
+    const history = syncHistoryWithStore(browserHistory, props.store);
 
     return (
         <Router history={history}>
