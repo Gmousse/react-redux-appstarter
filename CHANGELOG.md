@@ -2,6 +2,18 @@
 
 ---
 
+## v1.3.0
+
+**Author**: Guillaume Mousnier.
+
+**Type**: Feature
+
+**Changes**:
+- Correcting hot reload
+- Refactoring structure
+
+---
+
 ## v1.2.0
 
 **Author**: Guillaume Mousnier.
