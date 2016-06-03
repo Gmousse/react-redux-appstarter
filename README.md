@@ -83,18 +83,17 @@ This repository was inspired by [react-webpack-boilerplate](https://github.com/p
 │   ├── containers
 │   │   ├── App.jsx
 │   │   ├── DevTools.jsx
-│   │   ├── Root.dev.jsx
-│   │   ├── Root.js
-│   │   ├── Root.prod.jsx
-│   │   └── Router.jsx
+│   │   ├── Root.jsx
+│   │   └── Routes.jsx
 │   ├── css
 │   │   └── main.css
 │   ├── index.js
 │   ├── reducers.js
-│   └── store
-│       ├── configureStore.dev.js
-│       ├── configureStore.js
-│       └── configureStore.prod.js
+│   └── configurationsstore
+│       └── store
+│             ├── configureStore.dev.js
+│             ├── configureStore.js
+│             └── configureStore.prod.js
 ├── .storybook
 │   ├── config.js
 │   ├── stories
