@@ -13,6 +13,7 @@
         "no-console": 0,
         "react/jsx-closing-bracket-location": 0,
         "react/prop-types": 0,
+        "react/jsx-indent-props": [1, 4],
         "object-curly-spacing": 0
     }
 }
