@@ -1,5 +1,14 @@
 # Changelog react-redux-appstarter
 
+## v1.4.0
+
+**Author**: Guillaume Mousnier.
+
+**Type**: Feature
+
+**Changes**:
+- Refreshing the dependencies
+
 ---
 
 ## v1.3.0
@@ -9,12 +18,8 @@
 **Type**: Feature
 
 **Changes**:
-<<<<<<< HEAD
-- Refreshing the dependencies
-=======
 - Correcting hot reload
 - Refactoring structure
->>>>>>> 134fa28f14fb75e4c3b7621547b86790c9044c65
 
 ---
 
