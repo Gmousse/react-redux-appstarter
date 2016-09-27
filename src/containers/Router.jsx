@@ -2,7 +2,7 @@ import React from 'react';
 import { Router, IndexRoute, Route, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 
-import App from './App';
+import App from './App.jsx';
 import YourComponent from '../components/YourComponent.jsx';
 
 export function route(store) {

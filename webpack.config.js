@@ -1,11 +1,8 @@
-var path = require('path');
-var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
-    entry: [
-        './src/index.js',
-    ],
+    entry: './src/index.js',
     output: {
         path: path.join(__dirname, 'public'),
         filename: 'bundle.js',
@@ -13,16 +10,17 @@ module.exports = {
     },
     plugins: [
         new webpack.NoErrorsPlugin(),
-        new ExtractTextPlugin('index.css'),
         new webpack.DefinePlugin({
             'process.env': {
                 'NODE_ENV': JSON.stringify('production'),
             },
         }),
         new webpack.optimize.UglifyJsPlugin({
-            compressor: {
+            compress: {
                 warnings: false,
             },
+            sourceMap: false,
+            mangle: false,
         }),
     ],
     module: {

@@ -14,7 +14,7 @@ test('YourComponent display simple messages properly', (t) => {
     renderer.render(<YourComponent />);
 
     t.jsxEquals(
-        <header>
+        <header style={{color: 'black'}}>
             Hello World
         </header>,
         renderer.getRenderOutput(),
