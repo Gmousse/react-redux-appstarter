@@ -1,5 +1,6 @@
 # react-redux-appstarter
-#### Current version: 1.3.0
+
+#### Current version: 1.4.0
 
 A starter pack to develop a react + redux + webpack application.
 
