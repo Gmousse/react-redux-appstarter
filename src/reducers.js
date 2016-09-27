@@ -6,7 +6,7 @@ const yourInitialState = {
     test: '',
 };
 
-export default function yourState(state = yourInitialState, action) {
+function yourState(state = yourInitialState, action) {
     switch (action.type) {
     case ACTION_TYPE:
         return Object.assign({}, state, {
