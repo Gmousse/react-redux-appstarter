@@ -2,6 +2,17 @@
 
 ---
 
+## v1.3.0
+
+**Author**: Guillaume Mousnier.
+
+**Type**: Feature
+
+**Changes**:
+- Refreshing the dependencies
+
+---
+
 ## v1.2.0
 
 **Author**: Guillaume Mousnier.
