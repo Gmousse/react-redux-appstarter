@@ -17,6 +17,7 @@
   "devDependencies": {
     "@kadira/react-storybook-addon-info": "^3.0.6",
     "@kadira/storybook": "^1.34.1",
+    "autoprefixer": "^6.5.0",
     "babel-cli": "^6.7.7",
     "babel-core": "^6.3.15",
     "babel-eslint": "^4.1.6",
@@ -50,11 +51,11 @@
     "tap-diff": "^0.1.1",
     "tape": "^4.5.1",
     "tape-jsx-equals": "^1.0.0",
+    "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.8.3",
     "webpack-hot-middleware": "^2.12.2"
   },
   "dependencies": {
-    "autoprefixer": "^6.5.0",
     "babel-polyfill": "^6.13.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
@@ -62,7 +63,6 @@
     "react-router": "^2.8.1",
     "react-router-redux": "^4.0.6",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.1.0",
-    "webpack": "^1.12.9"
+    "redux-thunk": "^2.1.0"
   }
 }
