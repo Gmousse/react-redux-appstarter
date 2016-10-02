@@ -18,6 +18,7 @@
 **Type**: Feature
 
 **Changes**:
+- Refreshing the dependencies
 - Correcting hot reload
 - Refactoring structure
 
