@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
     devtool: 'eval',
@@ -28,7 +29,7 @@ module.exports = {
             ],
         }, {
             test: /\.css$/,
-            loaders: ['style', 'css'],
+            loader: 'style-loader!css-loader!postcss-loader',
         }, {
             test: /\.(ico|jpe?g|png|gif)$/,
             loaders: ['file?name=[path][name].[ext]&context=./src'],
@@ -40,4 +41,7 @@ module.exports = {
             loaders: ['file?name=[path][name].[ext]&context=./src'],
         }],
     },
+    postcss: [autoprefixer({
+        browsers: ['last 2 versions'],
+    })],
 };
