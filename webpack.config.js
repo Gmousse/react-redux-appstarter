@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
     entry: './src/index.js',
@@ -12,7 +13,7 @@ module.exports = {
         new webpack.NoErrorsPlugin(),
         new webpack.DefinePlugin({
             'process.env': {
-                'NODE_ENV': JSON.stringify('production'),
+                NODE_ENV: JSON.stringify('production'),
             },
         }),
         new webpack.optimize.UglifyJsPlugin({
@@ -35,7 +36,7 @@ module.exports = {
             ],
         }, {
             test: /\.css$/,
-            loaders: ['style', 'css'],
+            loader: 'style-loader!css-loader!postcss-loader',
         }, {
             test: /\.(ico|jpe?g|png|gif)$/,
             loaders: ['file?name=[path][name].[ext]&context=./src'],
@@ -47,4 +48,7 @@ module.exports = {
             loaders: ['file?name=[path][name].[ext]&context=./src'],
         }],
     },
+    postcss: [autoprefixer({
+        browsers: ['last 2 versions'],
+    })],
 };
