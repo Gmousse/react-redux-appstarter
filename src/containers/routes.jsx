@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Router, IndexRoute, Route, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 
-import App from './App.jsx';
-import YourComponent from '../components/YourComponent.jsx';
+import App from '../components/app.jsx';
+import YourComponent from '../components/yourComponent.jsx';
 
-export default function Routes(props) {
+function Routes(props) {
     const history = syncHistoryWithStore(browserHistory, props.store);
 
     return (
@@ -16,3 +16,9 @@ export default function Routes(props) {
         </Router>
     );
 }
+
+Routes.propTypes = {
+    store: PropTypes.object,
+};
+
+export default Routes;

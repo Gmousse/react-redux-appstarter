@@ -3,8 +3,8 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 
 import configureStore from '../configurations/store/configureStore.js';
-import DevTools from './DevTools.jsx';
-import Routes from './Routes.jsx';
+import DevTools from './devTools.jsx';
+import Routes from './routes.jsx';
 
 const store = configureStore();
 
@@ -15,4 +15,5 @@ render(
             <Routes store={store} />
         </div>
     </Provider>,
-     document.getElementById('app'));
+    document.getElementById('app') // eslint-disable-line no-undef
+);
