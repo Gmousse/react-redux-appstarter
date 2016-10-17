@@ -1,5 +1,16 @@
 # Changelog react-redux-appstarter
 
+## v1.5.0
+
+**Author**: Guillaume Mousnier.
+
+**Type**: Feature
+
+**Changes**:
+- Updating eslint rules and refatoring the app structure
+
+---
+
 ## v1.4.0
 
 **Author**: Guillaume Mousnier.

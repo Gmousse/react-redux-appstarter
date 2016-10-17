@@ -1,5 +1,4 @@
-if (process.env.NODE_ENV === 'production') {
-    module.exports = require('./configureStore.prod.js');
-} else {
-    module.exports = require('./configureStore.dev.js');
-}
+import configureStoreProd from './configureStore.prod.js';
+import configureStoreDev from './configureStore.dev.js';
+
+export default process.env.NODE_ENV === 'production' ? configureStoreProd : configureStoreDev;
