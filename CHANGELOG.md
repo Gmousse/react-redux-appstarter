@@ -1,5 +1,16 @@
 # Changelog react-redux-appstarter
 
+## v1.6.0
+
+**Author**: Guillaume Mousnier.
+
+**Type**: Feature
+
+**Changes**:
+- Adding the module sourcing. You can now use import from /src.
+
+---
+
 ## v1.5.0
 
 **Author**: Guillaume Mousnier.
