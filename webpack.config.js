@@ -24,6 +24,9 @@ module.exports = {
             mangle: false,
         }),
     ],
+    resolve: {
+        modulesDirectories: ['src', 'node_modules'],
+    },
     module: {
         loaders: [{
             test: /\.json$/,

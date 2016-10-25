@@ -17,6 +17,9 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin(),
     ],
+    resolve: {
+        modulesDirectories: ['src', 'node_modules'],
+    },
     module: {
         loaders: [{
             test: /\.json$/,
