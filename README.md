@@ -1,5 +1,7 @@
 # react-redux-appstarter
 
+ [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 #### Current version: 1.6.0
 
 A starter pack to develop a react + redux + webpack application.
